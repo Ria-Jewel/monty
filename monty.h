@@ -1,5 +1,6 @@
 #ifndef MONTY_H
 #define MONTY_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -7,6 +8,7 @@
 #include <fcntl.h>
 #include <string.h>
 #include <ctype.h>
+
 /**
  * struct stack_s - Doubly linked list representation of a stack (or queue)
  * @n: Integer value stored in the node
@@ -65,10 +67,11 @@ typedef struct instruction_s
     char *opcode;
     void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
 /* Function prototypes */
 char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
 ssize_t getstdin(char **lineptr, int file);
-char  *clean_line(char *content);
+char *clean_line(char *content);
 void f_push(stack_t **head, unsigned int number);
 void f_pall(stack_t **head, unsigned int number);
 void f_pint(stack_t **head, unsigned int number);
@@ -95,3 +98,4 @@ void f_stack(stack_t **head, unsigned int counter);
 int main(int argc, char *argv[]);
 
 #endif
+
