@@ -1,5 +1,4 @@
 #include "monty.h"
-
 /**
  * f_pop - Removes the top element of the stack.
  * @head: Pointer to the head of the stack.
@@ -24,4 +23,3 @@ void f_pop(stack_t **head, unsigned int counter)
 	*head = h->next;
 	free(h);
 }
-

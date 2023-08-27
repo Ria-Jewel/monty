@@ -1,5 +1,4 @@
 #include "monty.h"
-
 /**
  * f_stack - Sets the data structure to use a stack (LIFO mode).
  * @head: Unused parameter (stack's head).
@@ -11,8 +10,7 @@
  */
 void f_stack(stack_t **head, unsigned int counter)
 {
-(void)head;
-(void)counter;
-bus.lifi = 0; /* Set mode to stack (LIFO) */
+	(void)head;
+	(void)counter;
+	bus.lifi = 0;
 }
-

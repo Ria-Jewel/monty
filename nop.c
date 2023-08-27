@@ -1,5 +1,4 @@
 #include "monty.h"
-
 /**
  * f_nop - Does nothing.
  * @head: Pointer to the stack's head.
@@ -11,11 +10,7 @@
  * to represent a placeholder operation in the Monty bytecode.
  */
 void f_nop(stack_t **head, unsigned int counter)
-
 {
-
-(void)counter; /* Unused parameter, ignore it */
-(void)head;    /* Unused parameter, ignore it */
-
+	(void) counter;
+	(void) head;
 }
-
