@@ -16,14 +16,14 @@ void f_add(stack_t **head, unsigned int counter)
 
     h = *head;
 
-    // Calculate the length of the stack
+    /* Calculate the length of the stack*/
     while (h)
     {
         h = h->next;
         len++;
     }
 
-    // Check if the stack has less than 2 elements
+    /* Check if the stack has less than 2 elements*/
     if (len < 2)
     {
         fprintf(stderr, "L%d: can't add, stack too short\n", counter);
@@ -35,14 +35,14 @@ void f_add(stack_t **head, unsigned int counter)
 
     h = *head;
 
-    // Calculate the sum of the top two elements
+    /* Calculate the sum of the top two elements*/
     aux = h->n + h->next->n;
     h->next->n = aux;
 
-    // Update the head to remove the top element
+    /* Update the head to remove the top element*/
     *head = h->next;
 
-    // Free the previous top element
+    /* Free the previous top element*/
     free(h);
 }
 
